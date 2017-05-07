@@ -1,0 +1,9 @@
+{
+  "name": "realm-legends",
+  "version": "0.0.0",
+  "description": "realm-legends",
+  "main": "app.js",
+  "author": {
+    "name": "Cooper"
+  }
+}
