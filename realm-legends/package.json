@@ -5,5 +5,9 @@
   "main": "app.js",
   "author": {
     "name": "Cooper"
+  },
+  "dependencies": {
+    "electron-edge": "^6.5.5",
+    "electron-prebuilt": "1.4.13"
   }
 }
