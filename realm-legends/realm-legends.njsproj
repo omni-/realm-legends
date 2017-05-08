@@ -4,7 +4,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>realm-legends</Name>
     <RootNamespace>realm-legends</RootNamespace>
-    <NodeExePath>C:\Users\Cooper\Documents\Visual Studio 2017\Projects\realm-legends\realm-legends\node_modules\electron-prebuilt\dist\electron.exe</NodeExePath>
+    <NodeExePath>C:\Users\Cooper\Documents\GitHub\realm-legends\realm-legends\node_modules\electron-prebuilt\dist\electron.exe</NodeExePath>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -30,11 +30,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="config.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Content Include="index.html">
       <SubType>Code</SubType>
     </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="styles.css">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js
-    <script>document.write(process.versions.node)</script>,
-    Chromium
-    <script>document.write(process.versions.chrome)</script>,
-    and Electron
-    <script>document.write(process.versions.electron)</script>.
+    <div class="mainFlex">
+        <div id="leftpane" class="pane">
+            Left
+        </div>
+
+        <div id="pane_center" class="pane vertical_pane">
+            <div id="output" class="shell">
+                <span>Test</span>
+                <span>Test</span>
+                <span>Test</span>
+                <span>Test</span>
+                <span>Test</span>
+                <span>Test</span>
+                <span>Test</span>
+                <span>Test</span>
+                <span>Test</span>
+                <span>Test</span>
+                <span>Test</span>
+                <span>Test</span>
+
+            </div>
+            <div id="input_box" class="input">><input type="text" /></div>
+        </div>
+
+        <div id="rightpane" class="pane">
+            Right
+        </div>
+    </div>
+
 </body>
 </html>

@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "electron-edge": "^6.5.5",
-    "electron-prebuilt": "1.4.13"
+    "electron-prebuilt": "1.4.13",
+    "ipc": "0.0.1"
   }
 }

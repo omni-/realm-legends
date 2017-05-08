@@ -1,0 +1,61 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    background-color: grey;
+    height: 99%;
+    margin: 0;
+}
+
+
+.mainFlex {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+
+
+.pane {
+    height: 100%;
+    background-color: whitesmoke;
+    flex-grow: 1;
+    margin: 5px 5px 1px 5px;
+}
+
+.vertical_pane {
+    display: flex;
+    flex-direction: column;
+    background-color: hotpink;
+}
+
+.shell {
+    background-color: black;
+    color: limegreen;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    justify-content: flex-end;
+}
+
+.shell span {
+    margin-top: 3px;
+    border-bottom: 1px dotted limegreen;
+}
+
+.input {
+    background-color: black;
+    color: limegreen;
+    flex-grow: 0;
+    height: 20px;
+}
+    .input input {
+        background: transparent;
+        border: none;
+    }
+    .input input:focus {
+        background: transparent;
+        color: limegreen;
+        border: none;
+    }
