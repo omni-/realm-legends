@@ -40,8 +40,7 @@ body {
 }
 
 .shell span {
-    margin-top: 3px;
-    border-bottom: 1px dotted limegreen;
+    margin-top: 10px;
 }
 
 .input {

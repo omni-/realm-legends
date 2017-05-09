@@ -2,7 +2,9 @@
 
 const electron = require('electron');
 const edge = require('electron-edge');
-const ipc = require('ipc');
+const ipc = electron.ipcMain;
+const fs = require('fs');
+const shell = require('./shell.js');
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
@@ -25,6 +27,12 @@ function createWindow() {
         protocol: 'file:',
         slashes: true
     }));
+
+    //event handlers
+    ipc.on('cmdSubmit', function (event, data) {
+        shell.handleCommand(data);
+    });
+
 
     // Open the DevTools.
     mainWindow.webContents.openDevTools()
